@@ -1,5 +1,6 @@
-package escola;
+package br.com.alura.escola;
 
+import br.com.alura.escola.aluno.Email;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
