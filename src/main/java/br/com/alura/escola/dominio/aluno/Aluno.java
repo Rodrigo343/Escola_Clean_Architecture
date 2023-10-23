@@ -1,4 +1,4 @@
-package br.com.alura.escola.aluno;
+package br.com.alura.escola.dominio.aluno;
 
 import java.util.ArrayList;
 import java.util.List;
