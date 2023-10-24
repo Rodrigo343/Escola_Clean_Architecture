@@ -5,27 +5,28 @@ import java.util.List;
 
 public class Aluno {
 
-    private Cpf nome;
-    private String cpf;
+    private Cpf cpf;
+    private String nome;
     private Email email;
     private List<Telefone> telefones = new ArrayList<>();
+    private String senha;
 
-    public Aluno(Cpf nome, String cpf, Email email) {
+    public Aluno(String nome, Cpf cpf, Email email) {
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
     }
 
-    public Cpf getNome() {
+    public String getCpf() {
+        return cpf.getNumero();
+    }
+
+    public String getNome() {
         return nome;
     }
 
-    public String getCpf() {
-        return cpf;
-    }
-
-    public Email getEmail() {
-        return email;
+    public String getEmail() {
+        return email.getEndereco();
     }
 
     public List<Telefone> getTelefones() {
