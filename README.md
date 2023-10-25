@@ -2,7 +2,7 @@
 
 ### :dart: Objetivo
 Esse projeto foi inicialmente contruido com o intuido de aprendenter e entender os conceitos de Clean Architecture. Dito isto o projeto tem como objetivo a aplicação e adaptção dos conceitos do Clean Architecture.
-Nosso projeto será como uma escola e algumas de suas principais funcionalidades serão: matricular alunos, cadastrar telefones dos alunos, indicação de alunos, entre outras.
+Nosso projeto será como uma escola e algumas de suas principais funcionalidades serão: matricular alunos, cadastrar telefones dos alunos, indicação de alunos, entre outras
 
 ### Arquitetura:
 
