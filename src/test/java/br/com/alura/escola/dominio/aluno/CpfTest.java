@@ -1,4 +1,4 @@
-package br.com.alura.escola.dominio;
+package br.com.alura.escola.dominio.aluno;
 
 import br.com.alura.escola.dominio.aluno.Cpf;
 import org.junit.jupiter.api.Test;

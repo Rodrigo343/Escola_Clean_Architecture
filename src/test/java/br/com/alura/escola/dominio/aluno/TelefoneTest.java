@@ -1,4 +1,4 @@
-package br.com.alura.escola.dominio;
+package br.com.alura.escola.dominio.aluno;
 
 import br.com.alura.escola.dominio.aluno.Telefone;
 import org.junit.jupiter.api.Test;
@@ -8,33 +8,36 @@ import static org.junit.jupiter.api.Assertions.*;
 public class TelefoneTest {
 
     @Test
-    void naoDeveriaCriarTelefoneComDddInvalido(){
+    void naoDeveriaCriarTelefoneComDDDsInvalidos() {
         assertThrows(IllegalArgumentException.class,
-                () -> new Telefone("1", "832494669"));
+                () -> new Telefone(null, "123456789"));
+
         assertThrows(IllegalArgumentException.class,
-                () -> new Telefone("", "832494669"));
+                () -> new Telefone("", "123456789"));
+
         assertThrows(IllegalArgumentException.class,
-                () -> new Telefone(null, "832494669"));
-    }
-    @Test
-    void naoDeveriaCriarTelefoneComNumeroInvalido(){
-        assertThrows(IllegalArgumentException.class,
-                () -> new Telefone("13", "8324954669"));
-        assertThrows(IllegalArgumentException.class,
-                () -> new Telefone("14", "8324946"));
-        assertThrows(IllegalArgumentException.class,
-                () -> new Telefone("14", ""));
-        assertThrows(IllegalArgumentException.class,
-                () -> new Telefone("43", null));
+                () -> new Telefone("1", "123456789"));
     }
 
     @Test
-    void deveriaCriarTelefoneValido(){
+    void naoDeveriaCriarTelefoneComNumerosInvalidos() {
+        assertThrows(IllegalArgumentException.class,
+                () -> new Telefone("11", null));
 
-        String ddd = "12";
-        String numero = "832494669";
+        assertThrows(IllegalArgumentException.class,
+                () -> new Telefone("11", ""));
+
+        assertThrows(IllegalArgumentException.class,
+                () -> new Telefone("11", "123"));
+    }
+
+    @Test
+    void deveriaPermitirCriarTelefoneComDDDENumeroValidos() {
+        String ddd = "11";
+        String numero = "123456789";
         Telefone telefone = new Telefone(ddd, numero);
         assertEquals(ddd, telefone.getDdd());
         assertEquals(numero, telefone.getNumero());
     }
+
 }
