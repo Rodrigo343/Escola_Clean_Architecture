@@ -1,10 +1,10 @@
-package br.com.alura.escola.academico.dominio.aluno;
+package br.com.alura.escola.shared.dominio;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class CpfTest {
+class CpfTest {
 
     @Test
     void naoDeveriaCriarCpfComNuemrosInvalidos(){
@@ -26,4 +26,5 @@ public class CpfTest {
         Cpf cpf = new Cpf(numero);
         assertEquals(numero, cpf.getNumero());
     }
+
 }

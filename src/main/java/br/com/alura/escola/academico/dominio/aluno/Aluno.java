@@ -1,5 +1,7 @@
 package br.com.alura.escola.academico.dominio.aluno;
 
+import br.com.alura.escola.shared.dominio.Cpf;
+
 import java.util.ArrayList;
 import java.util.List;
 

@@ -2,7 +2,7 @@ package br.com.alura.escola.academico.infra.aluno;
 
 import br.com.alura.escola.academico.dominio.aluno.Aluno;
 import br.com.alura.escola.academico.dominio.aluno.AlunoNaoEcnontrado;
-import br.com.alura.escola.academico.dominio.aluno.Cpf;
+import br.com.alura.escola.shared.dominio.Cpf;
 import br.com.alura.escola.academico.dominio.aluno.RepositorioDeAlunos;
 
 import java.util.ArrayList;
